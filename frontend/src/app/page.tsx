@@ -16,7 +16,7 @@ export default function Home() {
   })
   const [payAmount, setPayAmount] = useState('1000')
   const [payCurrency, setPayCurrency] = useState('USD')
-  const [getCurrency, setGetCurrency] = useState('BTC')
+  const [getCurrency, setGetCurrency] = useState<keyof typeof prices>('BTC')
 
   // Update prices in real-time
   useEffect(() => {
@@ -438,7 +438,7 @@ export default function Home() {
                   <button 
                     onClick={() => {
                       const temp = getCurrency
-                      setGetCurrency(payCurrency === 'USD' ? 'BTC' : payCurrency)
+                      setGetCurrency(payCurrency === 'USD' ? 'BTC' : payCurrency as keyof typeof prices)
                       setPayCurrency(temp)
                     }}
                     className="w-10 h-10 bg-[#137fec] rounded-full flex items-center justify-center hover:bg-[#1068c4] transition-colors"
@@ -458,7 +458,7 @@ export default function Home() {
                     />
                     <select 
                       value={getCurrency}
-                      onChange={(e) => setGetCurrency(e.target.value)}
+                      onChange={(e) => setGetCurrency(e.target.value as keyof typeof prices)}
                       className="bg-[#0d1419] border border-[#324d67] rounded-lg px-4 py-3 text-white focus:border-[#137fec] focus:outline-none"
                     >
                       <option>BTC</option>
