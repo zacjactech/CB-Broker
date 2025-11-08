@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head><meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Crypto Broker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#137fec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#111a22] dark group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#233648] px-4 sm:px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<svg fill="currentColor" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M36.7273 44C33.9891 44 31.6043 39.8386 30.3636 33.69C29.123 39.8386 26.7382 44 24 44C21.2618 44 18.877 39.8386 17.6364 33.69C16.3957 39.8386 14.0109 44 11.2727 44C7.25611 44 4 35.0457 4 24C4 12.9543 7.25611 4 11.2727 4C14.0109 4 16.3957 8.16144 17.6364 14.31C18.877 8.16144 21.2618 4 24 4C26.7382 4 29.123 8.16144 30.3636 14.31C31.6043 8.16144 33.9891 4 36.7273 4C40.7439 4 44 12.9543 44 24C44 35.0457 40.7439 44 36.7273 44Z"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Crypto Broker</h2>
+</div>
+<div class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal" href="#features">Features</a>
+<a class="text-white text-sm font-medium leading-normal" href="#how-it-works">How it Works</a>
+<a class="text-white text-sm font-medium leading-normal" href="#testimonials">Testimonials</a>
+</div>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Sign Up</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#233648] text-white text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+<div class="md:hidden">
+<button class="text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col gap-10 md:gap-20 py-10">
+<section id="hero">
+<div class="@container">
+<div class="@[480px]:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center" style='background-image: linear-gradient(rgba(17, 26, 34, 0.7) 0%, rgba(17, 26, 34, 1) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDed_4SaOdYBrDFNXr9uD_sAojRN74g7sEFvjCDnISnKsaeABJs3V3OgRaeqLc9pyKtak4CTdHc50L3V0XOBX6avWTIPwEtbsEEi9cwrojUmDXfuEVbG809a-akPX9wqnMsk9ivDLUME-M-mjRUvT76-rR4Ae_CZPtw57ziW5ou5OeNWOl-nrpWkMw6Ow03dz_IgmGH2pTQGGKUhWvokyr-zNx6jAs4_eEv6VTsMWpj3pJa5-XmHrO7PMb4FNyZHxb9s7axHYUl6zE3");'>
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em]">
+                                                The Future of Crypto Trading is Here
+                                            </h1>
+<h2 class="text-[#92adc9] text-base font-normal leading-normal @[480px]:text-lg max-w-2xl mx-auto">
+                                                Trade with confidence on our secure, low-fee platform. Access a wide range of assets and enjoy a seamless trading experience.
+                                            </h2>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Get Started</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section id="features">
+<div class="flex flex-col gap-10 px-4 @container">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto">
+                                        Key Benefits
+                                    </h1>
+<p class="text-[#92adc9] text-base font-normal leading-normal max-w-[720px] mx-auto">Discover the advantages of trading with our platform.</p>
+</div>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-4 p-0">
+<div class="flex flex-1 gap-4 rounded-xl border border-[#324d67] bg-[#192633] p-6 flex-col text-center items-center">
+<div class="text-primary bg-primary/20 rounded-full p-3">
+<span class="material-symbols-outlined text-3xl">security</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-white text-lg font-bold leading-tight">Secure Trading</h2>
+<p class="text-[#92adc9] text-sm font-normal leading-normal">Your assets are protected with our state-of-the-art security measures.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-[#324d67] bg-[#192633] p-6 flex-col text-center items-center">
+<div class="text-primary bg-primary/20 rounded-full p-3">
+<span class="material-symbols-outlined text-3xl">local_atm</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-white text-lg font-bold leading-tight">Low Fees</h2>
+<p class="text-[#92adc9] text-sm font-normal leading-normal">Enjoy competitive and transparent fee structures.</p>
+</div>
+</div>
+<div class="flex flex-1 gap-4 rounded-xl border border-[#324d67] bg-[#192633] p-6 flex-col text-center items-center">
+<div class="text-primary bg-primary/20 rounded-full p-3">
+<span class="material-symbols-outlined text-3xl">inventory_2</span>
+</div>
+<div class="flex flex-col gap-2">
+<h2 class="text-white text-lg font-bold leading-tight">Wide Asset Selection</h2>
+<p class="text-[#92adc9] text-sm font-normal leading-normal">Access a diverse range of cryptocurrencies and digital assets.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="how-it-works">
+<div class="flex flex-col gap-10 px-4 @container">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto">
+                                        How It Works
+                                    </h1>
+<p class="text-[#92adc9] text-base font-normal leading-normal max-w-[720px] mx-auto">Getting started is simple. Follow these four easy steps.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+<div class="flex flex-col items-center text-center gap-4">
+<div class="relative">
+<div class="bg-primary/20 text-primary rounded-full flex items-center justify-center size-16">
+<span class="material-symbols-outlined text-4xl">person_add</span>
+</div>
+<div class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center size-6 border-2 border-[#101922]">1</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Sign Up</h3>
+<p class="text-[#92adc9] text-sm">Create your account in just a few minutes.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="relative">
+<div class="bg-primary/20 text-primary rounded-full flex items-center justify-center size-16">
+<span class="material-symbols-outlined text-4xl">verified_user</span>
+</div>
+<div class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center size-6 border-2 border-[#101922]">2</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Verify Identity</h3>
+<p class="text-[#92adc9] text-sm">Complete our secure identity verification process.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="relative">
+<div class="bg-primary/20 text-primary rounded-full flex items-center justify-center size-16">
+<span class="material-symbols-outlined text-4xl">account_balance_wallet</span>
+</div>
+<div class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center size-6 border-2 border-[#101922]">3</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Deposit Funds</h3>
+<p class="text-[#92adc9] text-sm">Add funds to your account to start trading.</p>
+</div>
+</div>
+<div class="flex flex-col items-center text-center gap-4">
+<div class="relative">
+<div class="bg-primary/20 text-primary rounded-full flex items-center justify-center size-16">
+<span class="material-symbols-outlined text-4xl">candlestick_chart</span>
+</div>
+<div class="absolute -top-2 -right-2 bg-primary text-white text-xs font-bold rounded-full flex items-center justify-center size-6 border-2 border-[#101922]">4</div>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-white text-lg font-bold">Start Trading</h3>
+<p class="text-[#92adc9] text-sm">You're all set! Begin your crypto trading journey.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4" id="testimonials">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto">
+                        What Our Users Say
+                    </h1>
+<p class="text-[#92adc9] text-base font-normal leading-normal max-w-[720px] mx-auto">Hear from our satisfied customers who are already trading with us.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-6 p-6 bg-[#192633] rounded-xl border border-solid border-[#324d67]">
+<div class="flex items-center gap-4">
+<img alt="Alice J." class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9ve_MbrlMRTbhgdF_kyTp4KfUOuqwBZL0Et-TtGzUS9OiyDyfMxbqCXz9W_QWJf1gYQQjsn4BFQyNDh8ziyM6kDHiscYkELO3ltL_tLIRAMxQon-NFK-iuPNmCvW_Nqkd2gOyt4F-s9TzEuDW07mF8NTmtdMNgqajQldGexmETg3LPI9mOh87VWIxqg4WB6WzgUlYQOtD88Tk9vb9j1j-4ahYQ3is83iQV3Wt-3a1u16S60EgoV_UKDQ6FVT2nHAqS0A2dSRzpdSZ"/>
+<div>
+<p class="text-white font-semibold">Alice J.</p>
+<p class="text-[#92adc9] text-sm">Crypto Enthusiast</p>
+</div>
+</div>
+<p class="text-white">"An incredibly user-friendly platform with top-notch security. I've been trading here for over a year, and I've never had any issues. Highly recommended for both beginners and experienced traders."</p>
+</div>
+<div class="flex flex-col gap-6 p-6 bg-[#192633] rounded-xl border border-solid border-[#324d67]">
+<div class="flex items-center gap-4">
+<img alt="Bob K." class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACtaPB7p-fh3xpi-LbBG7SkBXHU6p9Fp6nfoQXCu4Oyn3SEZPzpRVKm0svCGBOtX8KXgGKUpj95o2esCycAHwb3cK1j31yx3kTfGyuFlDiZToL3gclQ6lnF0nQRRCqTh2fwFJzOGB_4whvAO4GTU_zkLHfCr5_5yOsW7poTuwXAoaXQ5mWBBBSH_lRh_7_wShOWUH4V0INKd4yBN-i6wuUSiYiTmFT6sipFuFwCHPqYfab2rwren8u3vBkdM8-qaxYCpdvAzetpfRz"/>
+<div>
+<p class="text-white font-semibold">Bob K.</p>
+<p class="text-[#92adc9] text-sm">Day Trader</p>
+</div>
+</div>
+<p class="text-white">"The low fees are a game-changer. I've saved a lot on transaction costs, which has significantly boosted my profits. The wide range of assets is a big plus too."</p>
+</div>
+<div class="flex flex-col gap-6 p-6 bg-[#192633] rounded-xl border border-solid border-[#324d67]">
+<div class="flex items-center gap-4">
+<img alt="Carol L." class="w-12 h-12 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJmUUxrQ2IWkQ3Bi4gWMyaWdq0CzAn_7ucViZcXxQr98rEZEantrcb9ZT_z8KTjz2Xu5tpP38PjsfoR6OBqDXZNd8lylAj9HPJw5glXRB2D-DI190zCNhxok9yKTTkZQXiXjjmzJreGyjmFxMtxN8pmMp0VwlQ3lLtZjyLSHXgxcla-8zxmxX-YG1h_J2k_cC7ZdDQSXWtlo0qgthvby-QcRufrKVfnre0qV5hRNEHGsbIQbE4c4cES03BQ-HIJSZJR8-YVj4L5hKB"/>
+<div>
+<p class="text-white font-semibold">Carol L.</p>
+<p class="text-[#92adc9] text-sm">Long-term Investor</p>
+</div>
+</div>
+<p class="text-white">"I love the seamless trading experience. The platform is fast, reliable, and easy to navigate. The customer support team is also very responsive and helpful."</p>
+</div>
+</div>
+</div>
+</section>
+<section class="px-4" id="faq">
+<div class="flex flex-col gap-10">
+<div class="flex flex-col gap-4 text-center">
+<h1 class="text-white tracking-light text-[32px] font-bold leading-tight @[480px]:text-4xl @[480px]:font-black @[480px]:leading-tight @[480px]:tracking-[-0.033em] max-w-[720px] mx-auto">Frequently Asked Questions</h1>
+<p class="text-[#92adc9] text-base font-normal leading-normal max-w-[720px] mx-auto">Find answers to common questions about our platform, security, fees, and trading.</p>
+</div>
+<div class="max-w-[720px] mx-auto w-full flex flex-col gap-4">
+<details class="group bg-[#192633] rounded-xl border border-solid border-[#324d67] p-6 cursor-pointer">
+<summary class="flex items-center justify-between">
+<h3 class="text-white font-semibold text-lg">What is Crypto Broker?</h3>
+<span class="material-symbols-outlined text-white transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-[#92adc9] mt-4">Crypto Broker is a digital asset platform that allows users to buy, sell, and trade a wide variety of cryptocurrencies. We provide a secure and user-friendly environment for both new and experienced traders.</p>
+</details>
+<details class="group bg-[#192633] rounded-xl border border-solid border-[#324d67] p-6 cursor-pointer">
+<summary class="flex items-center justify-between">
+<h3 class="text-white font-semibold text-lg">How do you ensure the security of my assets?</h3>
+<span class="material-symbols-outlined text-white transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-[#92adc9] mt-4">We employ a multi-layered security strategy, including cold storage for the majority of digital assets, two-factor authentication (2FA), and regular security audits to ensure the safety of your funds and data.</p>
+</details>
+<details class="group bg-[#192633] rounded-xl border border-solid border-[#324d67] p-6 cursor-pointer">
+<summary class="flex items-center justify-between">
+<h3 class="text-white font-semibold text-lg">What are the fees for trading?</h3>
+<span class="material-symbols-outlined text-white transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-[#92adc9] mt-4">We offer a competitive tiered fee structure based on your trading volume. Our fees are transparent and among the lowest in the industry. You can find a detailed fee schedule on our 'Fees' page.</p>
+</details>
+<details class="group bg-[#192633] rounded-xl border border-solid border-[#324d67] p-6 cursor-pointer">
+<summary class="flex items-center justify-between">
+<h3 class="text-white font-semibold text-lg">Which cryptocurrencies can I trade?</h3>
+<span class="material-symbols-outlined text-white transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-[#92adc9] mt-4">We support a wide range of cryptocurrencies, including majors like Bitcoin (BTC) and Ethereum (ETH), as well as a variety of altcoins. We are continuously adding new assets to our platform.</p>
+</details>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-[#233648] mt-10 py-10 px-4">
+<div class="max-w-[960px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+<div class="col-span-1 md:col-span-1">
+<h3 class="text-white font-bold mb-4">Crypto Broker</h3>
+<p class="text-[#92adc9] text-sm">The future of crypto trading.</p>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Sitemap</h4>
+<ul class="space-y-2">
+<li><a class="text-[#92adc9] hover:text-white text-sm" href="#features">Features</a></li>
+<li><a class="text-[#92adc9] hover:text-white text-sm" href="#how-it-works">How it Works</a></li>
+<li><a class="text-[#92adc9] hover:text-white text-sm" href="#testimonials">Testimonials</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Contact</h4>
+<ul class="space-y-2 text-[#92adc9] text-sm">
+<li><a class="hover:text-white" href="mailto:support@cryptobroker.com">support@cryptobroker.com</a></li>
+<li>123 Crypto Lane, Blockchain City</li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Follow Us</h4>
+<div class="flex justify-center md:justify-start space-x-4 text-[#92adc9]">
+<a class="hover:text-white" href="#"><svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48v-1.69c-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.11-1.46-1.11-1.46-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.9 1.53 2.36 1.09 2.94.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02.8-.22 1.65-.33 2.5-.33s1.7.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48C19.13 20.17 22 16.42 22 12c0-5.52-4.48-10-10-10z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+<a class="hover:text-white" href="#"><svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 4.01C21.34 4.31 20.64 4.5 19.91 4.58c.74-.44 1.3-1.14 1.56-1.95-.7.41-1.47.72-2.3.88C18.49 3.51 17.3 3 16 3c-2.52 0-4.57 2.05-4.57 4.57 0 .36.04.71.12 1.05C7.68 8.44 4.07 6.46 1.67 3.42c-.42.72-.66 1.56-.66 2.47 0 1.58.81 2.98 2.04 3.8- .75-.02-1.46-.23-2.09-.58v.06c0 2.21 1.57 4.05 3.66 4.47-.38.1-.78.15-1.19.15-.29 0-.58-.03-.86-.08.58 1.81 2.26 3.12 4.25 3.16C4.98 17.9 3.1 18.5 1.12 18.5c-.34 0-.68-.02-1.01-.06C2.2 19.82 4.43 21 6.89 21c7.07 0 10.94-5.86 10.94-10.94 0-.17 0-.33-.01-.5.75-.54 1.4-1.22 1.92-1.99z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+<a class="hover:text-white" href="#"><svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 01-12 0c0-2.31.85-4.4 2.24-6.02A8.005 8.005 0 0112 4a8.005 8.005 0 015.76 2.98A5.97 5.97 0 0116 8zm1.73 7.84a6.002 6.002 0 00-9.46 0C5.16 17.5 3 19.58 3 22h18c0-2.42-2.16-4.5-5.27-6.16z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></a>
+</div>
+</div>
+</div>
+<div class="text-center text-[#92adc9] text-sm mt-8 pt-8 border-t border-[#233648]">
+                            © 2024 Crypto Broker. All rights reserved.
+                        </div>
+</footer>
+</div>
+</div>
+</div>
+</div>
+</body></html>
