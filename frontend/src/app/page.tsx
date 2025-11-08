@@ -69,7 +69,7 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-[#137fec]/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}}></div>
       </div>
       {/* Header */}
-      <header className="border-b border-[#233648]/50 backdrop-blur-sm bg-[#111a22]/80 sticky top-0 z-50 px-4 sm:px-6 md:px-10 lg:px-40 py-3 sm:py-4 transition-all duration-300">
+      <header className="border-b border-[#233648]/50 backdrop-blur-sm bg-[#111a22]/80 fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 md:px-10 lg:px-40 py-3 sm:py-4 transition-all duration-300">
         <div className="max-w-[960px] mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 sm:gap-4 text-white">
             <svg className="w-5 h-5 sm:w-6 sm:h-6 text-[#137fec]" fill="currentColor" viewBox="0 0 48 48">
@@ -92,7 +92,7 @@ export default function Home() {
       </header>
 
       {/* Live Price Ticker */}
-      <div className="bg-[#0d1419] border-b border-[#233648]/30 py-3 overflow-hidden relative">
+      <div className="bg-[#0d1419] border-b border-[#233648]/30 py-3 overflow-hidden relative mt-[60px] sm:mt-[64px]">
         <div className="flex animate-scroll-seamless whitespace-nowrap">
           {[...Array(4)].map((_, idx) => (
             <div key={idx} className="flex items-center gap-8 px-4 flex-shrink-0">
