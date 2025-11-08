@@ -18,8 +18,15 @@ export default function Home() {
   const [payCurrency, setPayCurrency] = useState('USD')
   const [getCurrency, setGetCurrency] = useState<keyof typeof prices>('BTC')
 
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   // Update prices in real-time
   useEffect(() => {
+    if (!mounted) return
     const interval = setInterval(() => {
       setPrices(prev => {
         const updated = { ...prev }
@@ -32,7 +39,7 @@ export default function Home() {
       })
     }, 3000)
     return () => clearInterval(interval)
-  }, [])
+  }, [mounted])
 
   const calculateCrypto = () => {
     const amount = parseFloat(payAmount) || 0
@@ -96,19 +103,15 @@ export default function Home() {
         <div className="flex animate-scroll-seamless whitespace-nowrap">
           {[...Array(4)].map((_, idx) => (
             <div key={idx} className="flex items-center gap-8 px-4 flex-shrink-0">
-              {Object.entries(prices).map(([name, price], i) => {
-                const change = ((Math.random() - 0.5) * 5).toFixed(2)
-                const positive = parseFloat(change) > 0
-                return (
-                  <div key={`${idx}-${i}`} className="flex items-center gap-3 px-4 flex-shrink-0">
-                    <span className="text-white font-bold text-sm">{name}</span>
-                    <span className="text-[#92adc9] text-sm">${price.toFixed(name === 'BTC' || name === 'ETH' ? 2 : 4)}</span>
-                    <span className={`text-xs font-semibold ${positive ? 'text-green-400' : 'text-red-400'}`}>
-                      {positive ? '↑' : '↓'} {Math.abs(parseFloat(change)).toFixed(2)}%
-                    </span>
-                  </div>
-                )
-              })}
+              {Object.entries(prices).map(([name, price], i) => (
+                <div key={`${idx}-${i}`} className="flex items-center gap-3 px-4 flex-shrink-0">
+                  <span className="text-white font-bold text-sm">{name}</span>
+                  <span className="text-[#92adc9] text-sm">${price.toFixed(name === 'BTC' || name === 'ETH' ? 2 : 4)}</span>
+                  <span className="text-xs font-semibold text-green-400">
+                    ↑ 2.45%
+                  </span>
+                </div>
+              ))}
             </div>
           ))}
         </div>
@@ -267,7 +270,7 @@ export default function Home() {
                 <div>
                   <div className="text-[#92adc9] text-sm">BTC/USD</div>
                   <div className="text-white text-2xl font-bold">${prices.BTC.toFixed(2)}</div>
-                  <div className="text-green-400 text-sm">+{((Math.random() * 5)).toFixed(2)}% (24h)</div>
+                  <div className="text-green-400 text-sm">+2.45% (24h)</div>
                 </div>
                 <div className="flex gap-2">
                   {['1H', '1D', '1W', '1M'].map((t, i) => (
