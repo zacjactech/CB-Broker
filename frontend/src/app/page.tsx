@@ -24,8 +24,9 @@ export default function Home() {
       setPrices(prev => {
         const updated = { ...prev }
         Object.keys(updated).forEach(key => {
-          const change = (Math.random() - 0.5) * (updated[key] * 0.02)
-          updated[key] = Math.max(0.0001, updated[key] + change)
+          const k = key as keyof typeof updated
+          const change = (Math.random() - 0.5) * (updated[k] * 0.02)
+          updated[k] = Math.max(0.0001, updated[k] + change)
         })
         return updated
       })
